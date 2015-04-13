@@ -22,9 +22,15 @@
     background: #4393B9;
 }
 
+.map-height {
+  height: 640px;
+}
+
 .footer {
     text-align: center;
-    padding: 30px 0;
-    margin-top: 70px;
     border-top: 1px solid #E5E5E5;
+}
+
+.header-no-margin {
+  margin-bottom: 0 !important;
 }

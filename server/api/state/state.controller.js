@@ -13,7 +13,7 @@ exports.index = function(req, res) {
 exports.show = function(req, res) {
   State.findById(req.params.id, function (err, state) {
     if(err) { return handleError(res, err); }
-    if(!thing) { return res.send(404); }
+    if(!state) { return res.send(404); }
     return res.json(state);
   });
 };
