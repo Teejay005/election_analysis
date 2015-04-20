@@ -8,10 +8,10 @@ describe('Service: map', function () {
     $httpBackend;
 
   var stubData = {
-    "type": "FeatureCollection"
+    'type': 'FeatureCollection'
   };
 
-  beforeEach(inject(function (mapDataService, _$httpBackend_, $controller) {
+  beforeEach(inject(function (mapDataService, _$httpBackend_) {
     $httpBackend = _$httpBackend_;
     mapService = mapDataService;
     $httpBackend.expectGET('http://localhost:3000/app/data/nigeria_geojson.json')
